@@ -176,64 +176,14 @@ h3 {
   min-height: 220px;
 }
 
-/* - - - Faixa 1 - - - */
-.faixa-1 {
-  background-color: var(--light-pink-bg);
-}
-
-.produtos-texto {
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  padding-top: 4%;
-}
-
-.dia-criancas {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  background-color: var(--dark-pink-bg);
-  width: 100%;
-  align-items: center;
-  position: absolute;
-  margin: 15px auto 0 0;
+.product-item {
   min-height: 220px;
-}
-/* - - - Faixa 2 - - - */
-
-.faixa-2 {
-  background-color: var(--dark-pink-bg);
-}
-
-.dia-dos-namorados {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   width: 100%;
-  align-items: center;
   position: absolute;
-  margin: 15px auto 0 0;
-}
-
-/* - - - Faixa 3 - - - */
-
-.faixa-3 {
-  background-color: var(--light-pink-bg);
-}
-
-.aniversario {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  width: 100%;
   align-items: center;
-  position: absolute;
-  margin: 15px auto 0 0;
-}
-
-.aniversario h3 {
-  padding-left: 80px;
 }
 
 .produto-esquerda {
@@ -243,3 +193,61 @@ h3 {
 .produto-direita {
   margin-right: 30px;
 }
+
+/* - - - Faixa 1 - - - */
+
+.produtos-texto {
+  text-align: center;
+  justify-content: center;
+  z-index: 3;
+  background-color: var(--light-pink-bg);
+}
+
+.dia-das-maes {
+  background-color: var(--dark-pink-bg);
+  z-index: 1;
+}
+
+.dia-das-maes h3 {
+  color: white;
+}
+
+/* - - - Faixa 2 - - - */
+
+.dia-dos-namorados {
+  background-color: var(--dark-pink-bg);
+  z-index: 3;
+}
+
+.pascoa {
+  background-color: var(--light-pink-bg);
+  z-index: 1;
+}
+
+/* - - - Faixa 3 - - - */
+
+.aniversario {
+  background-color: var(--light-pink-bg);
+  z-index: 3;
+}
+
+.aniversario h3 {
+  padding-left: 80px;
+}
+
+.dia-das-criancas {
+  background-color: var(--dark-pink-bg);
+  z-index: 1;
+}
+
+.dia-das-criancas h3 {
+  color: white;
+}
+
+.dia-das-criancas img {
+  margin-top: -10px;
+}
+
+/*----------------------------------*/
+
+/*-------- Products Section -------*/
