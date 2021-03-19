@@ -7,6 +7,7 @@
   --accent-yellow: #ffd469;
   --accent-blue: #8dc6c6;
 }
+/*----------------------------------*/
 
 /* ---- Global Elements ---- */
 body {
@@ -25,6 +26,24 @@ h1 {
   font-weight: 800;
   font-size: 4.5rem;
 }
+
+h2 {
+  color: var(--dark-pink-text);
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+h3 {
+  color: var(--dark-pink-text);
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 2.2rem;
+  align-self: center;
+}
+/*----------------------------------*/
+
 /* ---- Nav bar ---- */
 .nav-bar {
   display: flex;
@@ -53,6 +72,7 @@ h1 {
   color: white;
   padding: 0px 10px;
 }
+/*----------------------------------*/
 
 /* ----- Home Section ------*/
 #home {
@@ -67,7 +87,7 @@ h1 {
   background-repeat: no-repeat;
 }
 
-/*----- Home Section - First Half ------*/
+/*- - - - Home Section - First Half - - - -*/
 .home-main-text {
   grid-row: 1/2;
   grid-column: 1/2;
@@ -97,6 +117,7 @@ h1 {
   color: white;
   background-color: var(--dark-pink-text);
   font-weight: bold;
+  font-size: 1.3rem;
   font-family: Raleway;
   border-radius: 15px;
   align-self: center;
@@ -104,7 +125,7 @@ h1 {
   margin-top: 15px;
 }
 
-/*----- Home Section - Second Half ------*/
+/*- - - - Home Section - Second Half - - - -*/
 .images-home {
   grid-row: 2/3;
   grid-column: 1/2;
@@ -116,12 +137,109 @@ h1 {
 }
 .images-home img {
   max-height: 220px;
+  z-index: 3;
 }
 .chocolate {
   padding-right: 12vw;
   transform: translateX(4vw);
+  z-index: 3;
+}
+.pan {
+  z-index: 3;
 }
 
 .brigadeiro {
   padding-left: 8vw;
+}
+
+.line {
+  position: absolute;
+  margin-top: 7%;
+  width: 85vw;
+  max-width: 1300px;
+}
+
+/*----------------------------------*/
+
+/*-------- Products Section -------*/
+#produtos {
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+}
+
+.produtos-faixa {
+  display: flex;
+  flex-flow: row;
+  width: 100vw;
+  position: relative;
+  min-height: 220px;
+}
+
+/* - - - Faixa 1 - - - */
+.faixa-1 {
+  background-color: var(--light-pink-bg);
+}
+
+.produtos-texto {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  padding-top: 4%;
+}
+
+.dia-criancas {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: var(--dark-pink-bg);
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  margin: 15px auto 0 0;
+  min-height: 220px;
+}
+/* - - - Faixa 2 - - - */
+
+.faixa-2 {
+  background-color: var(--dark-pink-bg);
+}
+
+.dia-dos-namorados {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  margin: 15px auto 0 0;
+}
+
+/* - - - Faixa 3 - - - */
+
+.faixa-3 {
+  background-color: var(--light-pink-bg);
+}
+
+.aniversario {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  margin: 15px auto 0 0;
+}
+
+.aniversario h3 {
+  padding-left: 80px;
+}
+
+.produto-esquerda {
+  margin-left: 20px;
+}
+
+.produto-direita {
+  margin-right: 30px;
 }
