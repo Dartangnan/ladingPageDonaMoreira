@@ -1,0 +1,40 @@
+/* ---- Defining the color palette ----- */
+:root {
+  --dark-pink-text: #af4568;
+  --dark-pink-bg: #e8acc5;
+  --light-pink-bg: #f1cfdd;
+  --accent-red: #c15c4c;
+  --accent-yellow: #ffd469;
+  --accent-blue: #8dc6c6;
+}
+
+/* ---- Global Elements ---- */
+
+/* ---- Nav bar ---- */
+.nav-bar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent-red);
+  width: 100%;
+  padding: 5px;
+}
+.nav-logo {
+  margin-left: 10px;
+}
+
+.nav-items {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.nav-items a {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 0px 10px;
+}
