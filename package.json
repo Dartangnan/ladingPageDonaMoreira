@@ -1,0 +1,22 @@
+{
+  "name": "donamoreirawebsite",
+  "version": "1.0.0",
+  "description": "Website for a baker Lara",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dartangnan/donaMoreira.git"
+  },
+  "author": "Dartangnan M Theml",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dartangnan/donaMoreira/issues"
+  },
+  "homepage": "https://github.com/Dartangnan/donaMoreira#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
