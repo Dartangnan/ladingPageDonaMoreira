@@ -6,6 +6,7 @@
   --accent-red: #c15c4c;
   --accent-yellow: #ffd469;
   --accent-blue: #8dc6c6;
+  --transparent-pink: #e8acc5c4;
 }
 /*----------------------------------*/
 
@@ -85,6 +86,9 @@ h3 {
   background-size: 100vw 100%;
   background-position: 0% -100px;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 /*- - - - Home Section - First Half - - - -*/
@@ -250,4 +254,94 @@ h3 {
 
 /*----------------------------------*/
 
-/*-------- Products Section -------*/
+/*--------  Transparent section -------*/
+.transparent-section {
+  position: relative;
+  min-height: 350px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--transparent-pink);
+}
+
+.transparent-section h1 {
+  font-size: 7rem;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.transparent-section img {
+  position: fixed;
+  width: 100vw;
+  z-index: -1;
+  transform: translateY(-1300px);
+}
+
+/*----------------------------------*/
+
+/*--------  About Me section -------*/
+#sobre-mim {
+  background-color: var(--light-pink-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 150px 0;
+}
+
+.foto-perfil {
+  width: 35%;
+  max-width: 550px;
+  margin-right: 5%;
+}
+
+.logo-descricao {
+  margin-right: 25px;
+  float: left;
+}
+
+.descricao-perfil {
+  width: 35%;
+  min-width: 450px;
+}
+
+.descricao-perfil p {
+  text-align: justify;
+  font-size: 1.23rem;
+
+  font-family: Raleway;
+}
+
+/*----------------------------------*/
+
+/*--------  Form -------*/
+.final-form {
+  background-color: var(--light-pink-bg);
+  width: 100%;
+  min-height: 700px;
+  padding-top: 0.02%;
+}
+
+.final-form h1 {
+  margin-top: 5%;
+  text-align: center;
+  transform: translateY(-50px);
+}
+
+.form-container {
+  background-color: white;
+  width: 45%;
+  min-width: 550px;
+  margin: 0 auto 5% auto;
+  min-height: 450px;
+  box-shadow: 40px 40px 5px 0 var(--accent-yellow);
+}
