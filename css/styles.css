@@ -8,6 +8,7 @@
   --accent-blue: #8dc6c6;
   --transparent-pink: #e8acc5c4;
 }
+
 /*----------------------------------*/
 
 /* ---- Global Elements ---- */
@@ -43,6 +44,7 @@ h3 {
   font-size: 2.2rem;
   align-self: center;
 }
+
 /*----------------------------------*/
 
 /* ---- Nav bar ---- */
@@ -72,6 +74,7 @@ h3 {
   font-size: 1rem;
   color: white;
   padding: 0px 10px;
+  cursor: pointer;
 }
 /*----------------------------------*/
 
@@ -388,6 +391,8 @@ form {
   font-size: 1rem;
 }
 
+/* - - - Grid - - - */
+
 .nome {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -431,6 +436,8 @@ form {
   font-size: 1rem;
 }
 
+/* - - - Send button - - - */
+
 .btn-send {
   width: 15%;
   min-width: 200px;
@@ -446,4 +453,32 @@ form {
   /* text-shadow: 6px -8px var(--accent-red); */
   padding: 0 20px;
   font-weight: 600;
+}
+
+/*----------------------------------*/
+
+/*--------  Footer -------*/
+
+footer {
+  min-height: 150px;
+  background-color: var(--accent-red);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  color: rgba(255, 255, 255, 0.534);
+  font-size: 2rem;
+}
+
+.icons span {
+  margin: 0 12px;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.534);
+  margin-top: 15px;
+  font-family: Raleway;
 }
