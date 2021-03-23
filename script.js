@@ -9,6 +9,7 @@ const navItems = navBar.querySelectorAll("a");
 const btnCallAct = document.querySelector(".btn-action");
 const btnCallText = btnCallAct.querySelector("span");
 const textHome = document.querySelector(".home-main-text").querySelector("p");
+const navIcon = document.querySelector(".nav-bar-icon");
 const textHomeCont = document.querySelector(".home-main-text");
 //  --  --  --  --  Faixa de Produtos--  --  --  --
 const productTexto = document.querySelector(".produtos-texto ");
@@ -20,6 +21,7 @@ const diaCriancas = document.querySelector(".dia-das-criancas");
 const produtosSection = document.querySelector("#produtos");
 //  --  --  --  --  Outros elementos--  --  --  --
 const pot = document.querySelector(".pot");
+let menuShow = 0;
 
 // =--------- Functioncs -------------=
 
@@ -104,46 +106,43 @@ const options = {
   threshold: 0.6,
 };
 
+//  --  --  --  --  Call for action button animation into an envelope --  --  --  --
 const observer = new IntersectionObserver(function (entries) {
   [entry] = entries;
   console.log(entry);
   if (entry.intersectionRatio < 0.6) {
-    setTimeout(function () {
-      setTimeout(function () {
-        btnCallAct.animate(
-          [
-            {
-              borderRadius: "15px",
-              position: "fixed",
-              backgroundColor: "var(--dark-pink-text)",
-              right: "36vw",
-              bottom: "76vh",
-            },
+    btnCallAct.animate(
+      [
+        {
+          borderRadius: "15px",
+          position: "fixed",
+          backgroundColor: "var(--dark-pink-text)",
+          right: "36vw",
+          bottom: "76vh",
+        },
 
-            {
-              borderRadius: "50%",
-              position: "fixed",
-              backgroundColor: "white",
-              paddingRight: "17px",
-              bottom: "15px",
-              right: "15px",
-            },
-          ],
-          {
-            fill: "forwards",
-            duration: 800,
-          }
-        );
+        {
+          borderRadius: "50%",
+          position: "fixed",
+          backgroundColor: "white",
+          paddingRight: "17px",
+          bottom: "15px",
+          right: "15px",
+        },
+      ],
+      {
+        fill: "forwards",
+        duration: 600,
+      }
+    );
 
-        btnCallText.animate(
-          [{ fontSize: "1.3rem" }, { fontSize: "0rem", paddingRight: "0" }],
-          {
-            fill: "forwards",
-            duration: 800,
-          }
-        );
-      }, 100);
-    }, 250);
+    btnCallText.animate(
+      [{ fontSize: "1.3rem" }, { fontSize: "0rem", paddingRight: "0" }],
+      {
+        fill: "forwards",
+        duration: 600,
+      }
+    );
 
     console.log("block");
   }
@@ -164,9 +163,8 @@ const observer = new IntersectionObserver(function (entries) {
         },
       ],
       {
-        // timing options
         fill: "forwards",
-        duration: 800,
+        duration: 600,
       }
     );
     btnCallText.animate(
@@ -180,12 +178,23 @@ const observer = new IntersectionObserver(function (entries) {
       {
         // timing options
         fill: "forwards",
-        duration: 800,
+        duration: 600,
       }
     );
-
-    // btnCallAct.classList.add("btn-call-action");
   }
 }, options);
 console.log(btnCallAct.offset, btnCallAct.offsetLeft);
+//observe the home page section
 observer.observe(homePage);
+
+//  --  --  --  --  Nav bar animation --  --  --  --
+navIcon.addEventListener("click", function () {
+  if (menuShow === 0) {
+    navBar.style.transform = "translateX(0)";
+    navBar.style.transition = "transform 1s";
+    menuShow++;
+  } else if (menuShow === 1) {
+    navBar.style.transform = "translateX(100%)";
+    menuShow = 0;
+  }
+});
