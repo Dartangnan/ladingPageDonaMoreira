@@ -37,7 +37,7 @@
         src="/css/images/logo-nav.png"
         alt="dona moreira logo "
       />
-      <div class="nav-items">
+      <div class="nav-items desktop">
         <a>Home</a>
         <a>Produtos</a>
         <a>Sobre Mim</a>
@@ -55,8 +55,14 @@
       >
     </div>
     <section id="home">
+      <div class="nav-items mobile">
+        <a>Home</a>
+        <a>Produtos</a>
+        <a>Sobre Mim</a>
+        <a>Fale Comigo</a>
+      </div>
       <div class="home-main-text">
-        <h1>ONDE SEU DOCE FAVORITO É CRIADO</h1>
+        <h1 class='section-hidden'>ONDE SEU DOCE FAVORITO É CRIADO</h1>
         <p>
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it
@@ -79,9 +85,6 @@
           src="/css/images/brigadeiro.png"
         />
       </div>
-      <!-- <div class="email-botao">
-        <i class="far fa-envelope" aria-hidden="true"></i>
-      </div> -->
     </section>
     <!-- ---------------------------- -->
 
@@ -101,7 +104,7 @@
           />
           <h3>Presente do Dia das Mães</h3>
           <img
-            class="produto-direita"
+            class="produto-direita desktop"
             src="/css/images/roses.png"
             alt="roses"
           />
@@ -110,7 +113,7 @@
 
       <!-- --------- Products Part 2  ---------- -->
 
-      <div class="produtos-faixa">
+      <div class="produtos-faixa faixa2">
         <div class="dia-dos-namorados product-item">
           <img
             class="produto-esquerda"
@@ -119,14 +122,14 @@
           />
           <h3>Presente do Dia dos Namorados</h3>
           <img
-            class="produto-direita"
+            class="produto-direita desktop"
             src="/css/images/coracoes.png"
             alt="coracoes"
           />
         </div>
         <div class="pascoa product-item">
           <img
-            class="produto-esquerda"
+            class="produto-esquerda desktop"
             src="/css/images/coelhos.png"
             alt="coelhos"
           />
@@ -144,7 +147,7 @@
       <div class="produtos-faixa">
         <div class="aniversario product-item">
           <img
-            class="produto-esquerda"
+            class="produto-esquerda desktop"
             src="/css/images/baloons.png"
             alt="baloons"
           />
@@ -160,7 +163,7 @@
           />
           <h3>Presente do Dia das Crianças</h3>
           <img
-            class="produto-direita"
+            class="produto-direita desktop"
             src="/css/images/controllers.png"
             alt="controllers"
           />
@@ -216,6 +219,7 @@
 
     <!-- --------- Form ---------- -->
     <section id="fale-comigo" class="final-form">
+      <div class='form-case'>
       <h1>Fale Comigo!</h1>
       <form type="post" action="/">
         <div class="form-container">
@@ -237,6 +241,7 @@
           </div>
         </div>
         <input class="btn-send" type="submit" value="Enviar !" />
+      </div>
       </form>
     </section>
     <footer>
