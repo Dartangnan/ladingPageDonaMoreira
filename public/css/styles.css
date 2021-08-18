@@ -216,7 +216,7 @@ h3 {
 /*----------------------------------*/
 
 /*-------- Products Section -------*/
-#produtos {
+#products {
   display: flex;
   flex-flow: column;
   overflow: hidden;
@@ -333,7 +333,7 @@ h3 {
 /*----------------------------------*/
 
 /*--------  About Me section -------*/
-#sobre-mim {
+#about-me {
   background-color: var(--light-pink-bg);
   display: flex;
   justify-content: center;
