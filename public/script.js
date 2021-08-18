@@ -1,8 +1,8 @@
 // =--------- Declaring the variables -------------=
 // --  --  --  --   Sections  --  --  --  --
-const faleComigo = document.getElementById("fale-comigo");
+const faleComigo = document.getElementById("contact");
 const homePage = document.getElementById("home");
-const aboutMe = document.getElementById("sobre-mim");
+const aboutMe = document.getElementById("about-me");
 // --  --  --  --   Links de Navegacao  --  --  --  --
 const navBar = document.querySelector(".mobile");
 const navItems = navBar.querySelectorAll("a");
@@ -25,7 +25,7 @@ const aniversario = document.querySelector(".aniversario");
 const diaMaes = document.querySelector(".dia-das-maes");
 const pascoa = document.querySelector(".pascoa");
 const diaCriancas = document.querySelector(".dia-das-criancas");
-const produtosSection = document.querySelector("#produtos");
+const produtosSection = document.querySelector("#products");
 //  --  --  --  --  Outros elementos--  --  --  --
 const pot = document.querySelector(".pot");
 const bodyAll = document.querySelector("body");
